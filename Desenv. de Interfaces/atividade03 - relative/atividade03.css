@@ -1,0 +1,43 @@
+p {
+    margin: 0;
+}
+
+#azul {
+    position: relative;  
+    background-color: blue;
+    
+
+    
+}
+
+#vermelho {
+    position: relative;
+    background-color: red;
+
+}
+
+#verde {
+    position: relative;
+    background-color: rgb(112, 187, 0);
+
+}
+
+#amarelo {
+    position: relative;
+    background-color: yellow;
+    border: 10px solid red;
+}
+
+#cinza {
+    position: relative;
+    background-color: grey;
+
+}
+
+#fundo {
+    position: relative;
+    width: 80%;
+    height: 600px;
+    background-color: #ccc;
+    margin: auto;
+}

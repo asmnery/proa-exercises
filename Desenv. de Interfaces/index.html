@@ -1,0 +1,177 @@
+<!DOCTYPE html> <!-- Versão HTML5.0-->>
+<html lang="pt-br"> <!--Conteudo dentro da pagina-->
+<head>
+    <meta charset="UTF-8"> <!--Caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Viemport: Ajuda no design responsivo-->
+    <meta name="Keywords" content="Proa">
+    <meta name="Description" content="Proa"
+    <title> Primeira Pagina PROA </title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        body{
+            font-size: 20px; /*Tamanho da fonte tem varias unidades de medida: px, pt, em, pcs, %, mm, cm*/
+            color: rgb(6, 94, 65);/*cor da fonte*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif;/*tipo da fonte*/
+            background-color: rgb(230, 226, 222);
+            background-image: url(img/San\ Joji.jpg);/*Para colocar imagem de fundo*/
+            background-repeat: no-repeat; /*Para as imagens não repetirem*/
+            background-position: center center;
+            background-attachment: fixed ; /*A imagem fica fixa enquanto o conteudo fica passando */
+           /*background-size: cover; preenche toda a tela com a imagem*/
+        }
+
+            h1{
+                font-size: 18px;
+                color: darkolivegreen;
+                text-align: center; /*alinhamento da fonte*/
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: black;
+                
+            }
+
+            h2{
+                font-size: 20px;
+                color: rgb(155, 21, 227);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+                background-color: rgb(111, 165, 252);
+
+            }
+
+            h3{
+                background-color: darkcyan;
+                font-size: 18px ;
+                width: 600px; /*atributo Largura*/ 
+                text-align: center;
+                color: crimson;
+                font-weight: normal; /*font-weight: normal, tira o negrito da fonte*/
+
+            }   
+
+            .diferente{
+                font-size: 20px;
+                color: darkcyan;
+                width: 100%;
+                text-align: center; /*alinhamento da fonte*/
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: crimson;
+                
+            }
+
+            img{
+                width: 250px; /*Largura*/
+                height: 230px;/*altura*/
+            }
+
+            .pequeno {
+            width: 250px;
+            height: auto; /* mantém a proporção */
+            }
+
+            .media {
+            width: 350px;
+            height: 330px;/* mantém a proporção */
+            border: 3px dashed skyblue; /* 3px pixel, dashed é o modo da borda e cor */
+            }
+
+            .grande {
+            width: 450px;
+            height: 430px; /* mantém a proporção */
+            }
+
+            h4,h5,h6{
+                font-size: 20px;
+                color: rgb(65, 128, 128);
+                width: 800px;
+                text-align: center; /*alinhamento da fonte*/
+                font-style: italic;
+                background-color: rgb(113, 6, 27); 
+            }
+
+            h4{
+                background-color: darkslateblue ;
+                margin: auto; /*Se deslocar pela pagina, auto quer dizer automatico*/
+                border: 5px solid springgreen;
+            }
+
+            h5{
+                margin-left: 250px;
+                /*margin-bottom: 0;*/
+                
+            }
+
+            h6{
+                margin: 0;
+            }
+
+            
+
+        
+
+
+    </style>
+</head>
+<body>
+    <!--Se eu quiser que qualquer texto fique com uma tag voce clica
+    Crtl + Shift + P. procure a paralvra Wrap e depois coloque a tag de escolha.-->
+    <h1> Primeira pagina: Home Page PROA </h1>
+    <h2>Pa Panamericano</h2>
+    <h3>Pa Panamericano</h3>
+    <h3>Pa Panamericano</h3>
+    <h3 class="diferente">Pa Panamericano</h3>
+    <h4>Pa Panamericano</h4>
+    <h5>Pa Panamericano</h5>
+    <h6>Pa Panamericano</h6>
+
+
+    
+    <p>
+        <b>Comme te pò—</b> <!-- Tag B Deixa em negrito : TAG em desuso -->
+        <Strong>Comme te pò—</Strong> <br> <!-- Tag Strong é bom para acessibilidade para quem é cego pq fala mais alto-->
+        Comme te pò capì chi te vò bene <br> <!--TAG br usa para dar quebra de linha ao paragrafos -->
+        Si tu le parle miezzo americano? <br>
+        Quanno se fa l'ammore sotto 'a Luna <br>
+        Comme te vene 'ncapa 'e di': I love you? <br>
+
+        Pa, pa l'americano <br>
+        Pa, pa l'americano <br>
+        Pa— <br>
+        Pa, pa l'americano <br>
+
+        Pa l'americano <br>
+        Pa, pa l'americano <br>
+        (Pa) <br>
+
+        Pa, pa l'americano <br>
+        Pa, pa l'americano <br>
+
+        Whisky, e soda, e rocchenroll <br>
+        Whisky, e soda, e rocchenroll <br>
+        Whisky, e soda, e rocchenroll <br>
+    </p>
+
+    <ol type = "" start="1"> <!--Ordenado-->
+        <li>Teste 1</li> <!-- Item dentro da lista-->
+    </ol>
+        
+    <ul style = "list-style-type:upper-latin"> <!-- Lista Desordenado, Tags para lista, katakana, Georgian,upper-latin etc.. -->
+        <li>Teste 2</li> <!-- Item dentro da lista-->
+    </ul>
+
+    <h2>Imagens!!</h2>
+    <a href="pagina.html" target=""><!-- TAG A é de Ancora-->
+        <img src="img/baixados (2).gif" alt="Aaaahhh" title="Depressão">
+    </a>
+        <img src="img/baixados (1).gif" alt="Kurby" class="media" title="Kurby">
+        <img src="img/baixados.gif" alt="Hello Kitty"  title="Helo Kite">
+        <img id="Sonic" src="img/sonic-devil.gif" alt="Sonic Doido" title="Sonic" > <br>
+
+        <a href="pagina.html" target="" rel="next"></a>
+
+
+    <a href="https://www.youtube.com/watch?v=O_dJSjg92Kg&list=RDO_dJSjg92Kg&start_radio=1"> 
+        <h1>LINK MUSICA</h1>
+    </a>
+        
+</body>
+</html> <!--FIm do HTML -->
