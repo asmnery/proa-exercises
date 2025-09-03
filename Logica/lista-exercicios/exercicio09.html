@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 09</title>
+</head>
+<body>
+    <h1>Exercicio 09</h1>
+    <script>
+
+        let valorDepositoMensal = parseFloat(prompt("Insira o valor de déposito mensal feito na poupança: "))
+        let taxaJurosMensal = parseFloat(prompt("Insira a taxa de juros mensal da poupança: "))
+
+        taxaJurosMensal = taxaJurosMensal / 100;
+
+        let saldo = 0;
+
+        
+        for (let mes = 1; mes <= 12; mes++) {
+
+            let JurosMensal = saldo * taxaJurosMensal
+            
+            saldo += JurosMensal
+            saldo += valorDepositoMensal
+
+            document.write("Mês " + mes + ": R$ " + saldo.toFixed(2) + "<br>")
+        }
+
+        document.write("O montante final após 12 meses é: " + saldo.toFixed(2))
+    </script>
+</body>
+</html>

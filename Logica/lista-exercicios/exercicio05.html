@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 05</title>
+</head>
+<body>
+    <h1>Exercicio 05</h1>
+
+    <script>
+
+        let precoProduto = parseFloat(prompt("Insira o valor do produto: "))
+        let quantidade = parseFloat(prompt("Insira a quantidade comprada do produto: "))
+
+        precoPago = precoProduto*quantidade
+
+        if (quantidade > 10) {
+            precoPago = precoPago*0.90
+        }
+
+        document.write("O preço pago será de: " + precoPago)
+
+    </script>
+</body>
+</html>
