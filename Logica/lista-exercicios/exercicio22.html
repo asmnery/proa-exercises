@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 22</title>
+  </head>
+  <body>
+    <h1>Exercicio 22</h1>
+    <script>
+      let salario = parseFloat(prompt("Insira seu salário: "));
+      let bonus = 0;
+
+      if (salario > 2000) {
+        bonus = salario * 0.1;
+      } else {
+        bonus = salario * 0.05;
+      }
+
+      soma = salario + bonus;
+
+      document.write(
+        "Salário: R$ " +
+          salario.toFixed(2) +
+          "<br>" +
+          "Bônus: R$ " +
+          bonus.toFix100ed(2) +
+          "<br>" +
+          "Valor Total: R$ " +
+          soma.toFixed(2)
+      );
+    </script>
+  </body>
+</html>
