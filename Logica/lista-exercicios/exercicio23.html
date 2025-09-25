@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 23</title>
+</head>
+<body>
+    <h1>Exercicio 23</h1>
+    <script>
+
+        let mes = prompt("insira o nome de um mês: ").toLowerCase()
+
+        let meses = ["janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+        let diasMeses = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+
+        let index = meses.indexOf(mes)
+
+        if(index !== -1) {
+            alert("O mês " + mes + " tem " + diasMeses[index] + " dias.")
+        } else {
+            alert("Mês incorreto")
+        }
+
+    </script>
+</body>
+</html>

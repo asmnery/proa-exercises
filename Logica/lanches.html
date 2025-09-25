@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanches</title>
+</head>
+<body>
+    <h1>Escolha de Lanches</h1>
+
+    <script>
+        let numeroPedido = prompt("Informe o número do seu pedido: ")
+        
+        switch(numeroPedido) {
+            case "01":
+                document.write("Combo Whopper <br>")
+                document.write("Batata Frita Média <br>")
+                document.write("Free Refil <br>")
+                document.write("R$ 34,90");
+                break;
+            case "02":
+                document.write("Combo Big King <br>")
+                document.write("Batata Frita Grande <br>")
+                document.write("Free Refil <br>")
+                document.write("R$ 40,50")
+                break; 
+            case "03":
+                document.write("Combo Chicken Crispy <br>")
+                document.write("Batata Frita Grande <br>")
+                document.write("Free Refil <br>")
+                document.write("R$ 37,89")
+                break;
+            case "04":
+                document.write("Combo King JR <br>")
+                document.write("Batata Frita Média <br>")
+                document.write("Free Refil <br>")
+                document.write("R$ 29,90")
+                break;
+            default:
+                document.write("Pedido não encontrado!")
+        }
+    </script>
+</body>
+</html>
