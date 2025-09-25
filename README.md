@@ -1,1 +1,1 @@
-Repositório dedicado a exercícios realizados no Instituto PROA.
+Repositório dedicado à exercícios realizados no Instituto PROA.
