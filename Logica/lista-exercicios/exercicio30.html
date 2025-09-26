@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 30</title>
+  </head>
+  <body>
+    <h1>Exercicio 30</h1>
+    <script>
+      let numMacasCompradas = parseInt(
+        prompt("Digite o número de maçãs compradas: ")
+      );
+      let maca;
+      let conta;
+
+      if (numMacasCompradas < 12) {
+        maca = 0.5;
+        conta = numMacasCompradas * maca;
+      } else {
+        maca = 0.4;
+        conta = numMacasCompradas * maca;
+      }
+
+      document.write("O valor total a ser pago é R$ " + conta.toFixed(2));
+    </script>
+  </body>
+</html>

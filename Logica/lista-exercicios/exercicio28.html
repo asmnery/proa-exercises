@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 28</title>
+  </head>
+  <body>
+    <h1>Exercicio 28</h1>
+    <script>
+      let peso = parseFloat(prompt("Insira seu peso: "));
+      let altura = parseFloat(prompt("Insira sua altura: "));
+
+      let imc = peso / altura ** 2;
+
+      if (imc < 18.5) {
+        document.write(
+          "Seu IMC é " +
+            imc.toFixed(2) +
+            ", e significa que você está abaixo do peso."
+        );
+      } else if (imc > 18.5 && imc < 25) {
+        document.write(
+          "Seu IMC é " +
+            imc.toFixed(2) +
+            ", e significa que você está no peso normal."
+        );
+      } else if (imc > 25 && imc < 30) {
+        document.write(
+          "Seu IMC é " +
+            imc.toFixed(2) +
+            ", e significa que você está sobrepeso."
+        );
+      } else if (imc > 30 && imc < 35) {
+        document.write(
+          "Seu IMC é " +
+            imc.toFixed(2) +
+            ", e significa que você está em obesidade grau I."
+        );
+      } else if (imc > 35 && imc < 40) {
+        document.write(
+          "Seu IMC é " +
+            imc.toFixed(2) +
+            ", e significa que você está em obesidade grau II."
+        );
+      } else {
+        document.write(
+          "Seu IMC é " +
+            imc.toFixed(2) +
+            ", e significa que você está em obesidade grau III."
+        );
+      }
+    </script>
+  </body>
+</html>

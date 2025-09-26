@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 26</title>
+  </head>
+  <body>
+    <h1>Exercicio 26</h1>
+    <script>
+      let codigo = parseInt(prompt("Digite o código do produto (1 a 5):"));
+      let quantidade = parseInt(prompt("Digite a quantidade:"));
+      let preco;
+
+      switch (codigo) {
+        case 1:
+          preco = 5.0;
+          break;
+        case 2:
+          preco = 7.5;
+          break;
+        case 3:
+          preco = 3.2;
+          break;
+        case 4:
+          preco = 10.0;
+          break;
+        case 5:
+          preco = 4.5;
+          break;
+        default:
+          preco = 0;
+          alert("Código inválido!");
+      }
+
+      let total = preco * quantidade;
+
+      if (preco > 0) {
+        alert("Total a pagar: R$ " + total.toFixed(2));
+      }
+    </script>
+  </body>
+</html>

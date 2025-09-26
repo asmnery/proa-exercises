@@ -7,6 +7,22 @@
   </head>
   <body>
     <h1>Exercicio 21</h1>
-    <script></script>
+    <script>
+      let idades = [12, 25, 17, 30, 15, 20, 8];
+
+      let menores = 0;
+      let maiores = 0;
+
+      for (let i = 0; i < idades.length; i++) {
+        if (idades[i] < 18) {
+          menores++;
+        } else {
+          maiores++;
+        }
+      }
+
+      console.log("Menores de idade:", menores);
+      console.log("Maiores de idade:", maiores);
+    </script>
   </body>
 </html>
