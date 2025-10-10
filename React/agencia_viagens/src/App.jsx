@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "./App.css";
 import Header from "./componentes/Header";
 import Home from "./componentes/Home";
@@ -11,13 +13,17 @@ function App() {
   return (
     <>
       <main>
-        <Header />
-        <Home />
-        <Escocia />
-        <Grand />
-        <Aruba />
-        <Muralhas />
-        <Footer />
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Escocia" element={<Escocia />} />
+            <Route path="/Grand" element={<Grand />} />
+            <Route path="/Muralhas" element={<Muralhas />} />
+            <Route path="/Aruba" element={<Aruba />} />
+          </Routes>
+          <Footer />
+        </Router>
       </main>
     </>
   );

@@ -7,8 +7,8 @@ function Aruba() {
     <section className={Style.fundo_aruba}>
       <h1>Venha conhecer a Aruba!</h1>
       <ComponenteProps
-        lugar="Escócia"
-        texto="A Escócia é um país fascinante, repleto de paisagens naturais deslumbrantes e uma rica herança cultural."
+        lugar="Aruba"
+        texto="Aruba é uma ilha caribenha famosa por suas praias de areia branca e mar azul-turquesa. Com clima ensolarado o ano todo, é um destino perfeito para relaxar e aproveitar a natureza."
         bandeira={Simbolo_Aruba}
       />
     </section>
