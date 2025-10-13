@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(./img/guitarra_fundo_body.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header {
+  background-image: url(./img/guitarras_header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 200px 40px 60px;
+  display: flex;
+  justify-content: end;
+  width: 95%;
+  margin: auto;
+
+  & nav {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    padding: 15px;
+
+    & a {
+      color: red;
+    }
+  }
+}
+
+main {
+  margin: auto;
+  width: 95%;
+
+  & #hero {
+    display: flex;
+    background-color: red;
+    padding: 20px 50px 50px;
+    gap: 50px;
+
+    & .conteudo {
+      background-color: #ba8a8a;
+      padding: 60px;
+      color: #fff;
+      font-size: 25px;
+
+      & h1 {
+        margin-bottom: 100px;
+      }
+    }
+
+    & img {
+      object-fit: cover;
+      width: 50%;
+    }
+  }
+
+  & #produtos {
+    display: flex;
+    background-color: #f2fcfd;
+    justify-content: space-evenly;
+    padding: 20px 50px 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    & .card {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 10px 10px 60px 10px;
+
+      & img {
+        width: 70%;
+      }
+
+      & h1 {
+        font-size: 15px;
+      }
+
+      & p {
+        font-weight: bold;
+        color: red;
+      }
+    }
+  }
+
+  & #endereco {
+    display: flex;
+    background-color: #ba5511;
+    padding: 20px 50px 70px;
+    gap: 50px;
+
+    & .conteudo {
+      background-color: #ba8a8a;
+      padding: 40px 30px 80px;
+      color: #fff;
+      font-size: 25px;
+
+      & h2 {
+        margin-bottom: 100px;
+      }
+    }
+
+    & iframe {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    & #hero {
+      flex-direction: column;
+      align-items: center;
+
+      & .conteudo {
+        width: 100%;
+      }
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    & #produtos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      & .card {
+        width: 100%;
+      }
+    }
+
+    & #endereco {
+      flex-direction: column;
+      align-items: center;
+
+      & .conteudo {
+        width: 100%;
+      }
+    }
+
+    & #contato {
+      display: flex;
+      flex-direction: row;
+      padding: 35px;
+      gap: 100px;
+      border-bottom: 20px solid #ba8a8a;
+      background-color: aqua;
+
+      & img {
+        width: 100px;
+        object-fit: cover;
+      }
+
+      & form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+      }
+    }
+  }
+}
