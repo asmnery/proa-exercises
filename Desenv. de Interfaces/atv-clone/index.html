@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone Básico do YouTube</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <i class="material-icons">menu</i>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
+          alt="YouTube Logo"
+          class="youtube-logo"
+        />
+      </div>
+
+      <div class="header-center">
+        <form class="search-bar">
+          <input type="text" placeholder="Pesquisar" />
+          <button type="submit"><i class="material-icons">search</i></button>
+        </form>
+        <i class="material-icons mic-icon">mic</i>
+      </div>
+
+      <div class="header-right">
+        <i class="material-icons">video_call</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons">account_circle</i>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <nav>
+        <a href="#" class="sidebar-link active">
+          <i class="material-icons">home</i>
+          <span>Início</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <i class="material-icons">explore</i>
+          <span>Explorar</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <i class="material-icons">subscriptions</i>
+          <span>Inscrições</span>
+        </a>
+        <hr />
+        <a href="#" class="sidebar-link">
+          <i class="material-icons">video_library</i>
+          <span>Biblioteca</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <i class="material-icons">history</i>
+          <span>Histórico</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="video-grid">
+        <div class="video-card">
+          <img
+            src="./assets/feats.jpg"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/messi.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">
+                FEATURES DO REMATCH QUE O ROCKET LEAGUE LANÇOU!
+              </h3>
+              <p class="channel-name">messi</p>
+              <p class="video-stats">1 mi de visualizações • há 1 dia</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="./assets/pack.png"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/pro.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">PACKS DO REMATCH NOVO!</h3>
+              <p class="channel-name">pro</p>
+              <p class="video-stats">250 mil visualizações • há 2 horas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <img
+            src="./assets/torneios.png"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/pro.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">
+                TORNEIOS NO REMATCH! DEVS CONFIRMARAM!
+              </h3>
+              <p class="channel-name">pro</p>
+              <p class="video-stats">500 mil visualizações • há 3 semanas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <img
+            src="./assets/feats.jpg"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/messi.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">FEATURES NOVAS!</h3>
+              <p class="channel-name">messi</p>
+              <p class="video-stats">810 mil visualizações • há 4 horas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <img
+            src="./assets/trocas.png"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/messi.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">TROCAS NO REMATCH!</h3>
+              <p class="channel-name">messi</p>
+              <p class="video-stats">200 mil visualizações • há 8 dias</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <img
+            src="./assets/torneios.png"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/messi.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">TORNEIOS NACIONAIS NO REMATCH!</h3>
+              <p class="channel-name">messi</p>
+              <p class="video-stats">160 mil visualizações • há 2 semanas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <img
+            src="./assets/trocas.png"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/messi.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">TROCAS CONFIRMADAS?</h3>
+              <p class="channel-name">messi</p>
+              <p class="video-stats">109 mil visualizações • há 5 dias</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <img
+            src="./assets/feats.jpg"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/pro.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">FEATS DO REMATCH QUE COPIARAM!</h3>
+              <p class="channel-name">pro</p>
+              <p class="video-stats">168 mil visualizações • há 4 dias</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <img
+            src="./assets/pack.png"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/messi.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">PACKS DO REMATCH LANÇAMENTO!</h3>
+              <p class="channel-name">messi</p>
+              <p class="video-stats">209 mil visualizações • há 2 semanas</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="./assets/trocas.png"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/pro.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">CONFIRMARAM AS TROCAS..</h3>
+              <p class="channel-name">pro</p>
+              <p class="video-stats">110 mil visualizações • há 10 dias</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="./assets/pack.png"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/messi.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">NOVOS PACKS SAO HORRÍVEIS!</h3>
+              <p class="channel-name">messi</p>
+              <p class="video-stats">355 mil visualizações • há 3 semanas</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="./assets/trocas.png"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/pro.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">se clicou você é bobo</h3>
+              <p class="channel-name">pro</p>
+              <p class="video-stats">10 mil visualizações • há 4 horas</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="./assets/feats.jpg"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/messi.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">ESSE VIDEO É RUIM</h3>
+              <p class="channel-name">404dro</p>
+              <p class="video-stats">72 mil visualizações • há 2 dias</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="./assets/trocas.png"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/pro.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">Clone do YouTube com Grid</h3>
+              <p class="channel-name">jhon</p>
+              <p class="video-stats">45 mil visualizações • há 2 meses</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="./assets/torneios.png"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/messi.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">TORNEIOS CANCELADOS NO REMATCH</h3>
+              <p class="channel-name">messi</p>
+              <p class="video-stats">170 mil visualizações • há 5 meses</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="./assets/trocas.png"
+            alt="Video Thumbnail"
+            class="video-thumbnail"
+          />
+          <div class="video-info">
+            <img src="./assets/pro.jpg" alt="Channel" class="channel-icon" />
+            <div class="video-text">
+              <h3 class="video-title">AS TROCAS FORAM PRO LIXO</h3>
+              <p class="channel-name">pro</p>
+              <p class="video-stats">7 mi visualizações • há 8 horas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
