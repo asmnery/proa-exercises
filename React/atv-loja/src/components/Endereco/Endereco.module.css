@@ -1,0 +1,18 @@
+.fundo_endereco {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 60px;
+  background-color: rgb(201, 65, 11);
+
+  padding-top: 20px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-evenly;
+
+  & iframe {
+    width: 45%;
+    height: 290px;
+    border-radius: 15px;
+  }
+}

@@ -1,0 +1,24 @@
+.fundo_hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding-bottom: 60px;
+  background-color: #ce0000;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  & img {
+    height: 300px;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .fundo_hero {
+    height: auto;
+    padding-top: 20px;
+    & img {
+      max-height: 230px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.fundo_cabecalho {
+  width: 95%;
+  margin: auto;
+
+  background-image: url(../../assets/imagens_atividade_violão/imagens/guitarras_header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 160px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 0 60px 30px 0;
+
+  & .cabecalho_nav {
+    background-color: #fff;
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+    padding: 15px 15px;
+
+    & a {
+      text-decoration: none;
+      color: #7c1010;
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .fundo_cabecalho {
+    padding-left: 60px;
+    & .cabecalho_nav {
+      width: 100%;
+    }
+  }
+}

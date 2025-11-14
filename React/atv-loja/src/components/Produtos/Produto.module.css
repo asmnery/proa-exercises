@@ -1,0 +1,23 @@
+.fundo_produto {
+  position: relative;
+  background-color: #ffffff;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+
+  & img {
+    width: 70%;
+  }
+  & .preco {
+    color: #f00;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .fundo_produto {
+    width: 45%;
+  }
+}

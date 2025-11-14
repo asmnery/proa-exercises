@@ -1,0 +1,16 @@
+.fundo_produtos {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #d6f8f8;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 1023px) {
+  .fundo_produtos {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
