@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mail Chimp</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/logo.png" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="cabecalho_conteudo">
+        <div class="conteudo_navegaveis">
+          <a href="#">Produtos</a>
+          <a href="#">Recursos</a>
+          <a href="#">Inspiração</a>
+          <a href="#">Preços</a>
+        </div>
+
+        <img src="./assets/logo-descript.png" alt="Logo Mail Chimp" />
+
+        <div class="conteudo_interacao">
+          <img src="./assets/icons.png" alt="Explorar e Carrinho" />
+          <button id="btn_conectar">Conectar</button>
+          <button id="btn_cadastro">Cadastre-se Gratuitamente</button>
+        </div>
+      </nav>
+    </header>
+
+    <section id="principal">
+      <div class="principal_conteudo">
+        <h1>As lojas do Mailchimp já estão disponíveis</h1>
+        <p>
+          Impulsione as vendas, envolva os clientes, e anuncie seu negócio em um
+          só lugar. Crie sua loja virtual gratuitamente.
+        </p>
+        <button id="btn_saiba_mais">Saiba Mais</button>
+      </div>
+
+      <div class="principal_cards">
+        <div class="produto_opcoes">
+          <img src="./assets/tres_pontinhos.png" alt="Mais Opções" />
+          <button onclick="mostraCarrinho()">
+            <img src="./assets/cart.png" alt="Carrinho de Compras" />
+          </button>
+        </div>
+        <div class="cards_produto">
+          <h3>Big Mood Spa</h3>
+          <img src="./assets/product.png" alt="Vela Aromática" />
+        </div>
+        <div class="cards_carrinho">
+          <p>Shopping Cart</p>
+          <img src="./assets/products.png" alt="Produtos no carrinho" />
+          <button id="btn_checkout">Continue to Checkout</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function mostraCarrinho() {
+        let element = document.querySelector(".cards_carrinho");
+
+        if (element.style.visibility === "hidden") {
+          element.style.visibility = "visible";
+        } else {
+          element.style.visibility = "hidden";
+        }
+      }
+    </script>
+  </body>
+</html>

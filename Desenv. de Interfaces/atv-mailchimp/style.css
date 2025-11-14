@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+:root {
+  --cor-fundo: #c5dbf2;
+  --cor-botoes: #007c89;
+  --cor-secao-produto: #007c89;
+  --cor-fonte-produto: #fa7354;
+  --cor-detalhe-cart: #eeeeec;
+  --cor-fonte: #241c15;
+}
+button {
+  cursor: pointer;
+}
+h1 {
+  font-family: "Libre Baskerville", sans-serif;
+}
+p {
+  font-family: "Architects Daughter", sans-serif;
+}
+h3,
+a,
+button {
+  font-family: "Dosis", sans-serif;
+  text-decoration: none;
+}
+body {
+  background-color: var(--cor-fundo);
+}
+.cabecalho {
+  width: 100%;
+  padding: 0 20px 0 20px;
+}
+.cabecalho_conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10%;
+}
+#btn_conectar:hover {
+  cursor: pointer;
+  transform: scale(1.09);
+  background-color: #ffffff;
+}
+.conteudo_navegaveis {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+
+  & a {
+    font-size: 17px;
+    color: var(--cor-fonte);
+    font-weight: 600;
+  }
+}
+.conteudo_interacao {
+  width: 30%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+#btn_conectar {
+  padding: 16px;
+  border: 1px solid #000;
+  background-color: transparent;
+}
+#btn_cadastro {
+  padding: 17px;
+  background-color: var(--cor-botoes);
+  color: #fff;
+  font-weight: 600;
+}
+
+#principal {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-top: 190px;
+  align-items: center;
+  gap: 5%;
+}
+.principal_conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: start;
+  justify-content: center;
+
+  & h1 {
+    color: var(--cor-fonte);
+    font-size: 48px;
+  }
+
+  & p {
+    color: #535352;
+    font-size: 24px;
+    font-style: initial;
+  }
+}
+#btn_saiba_mais {
+  background-color: var(--cor-botoes);
+  padding: 15px 35px 15px 35px;
+  color: #fff;
+  font-weight: 600;
+}
+#btn_saiba_mais:hover,
+#btn_cadastro:hover,
+#btn_checkout:hover {
+  transform: scale(1.1);
+  background-color: #01545e;
+  cursor: pointer;
+}
+
+.principal_cards {
+  display: flex;
+  width: fit-content;
+}
+.produto_opcoes {
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  top: 2%;
+  left: 2%;
+  width: 96%;
+  justify-content: space-between;
+}
+.cards_produto {
+  background-color: var(--cor-detalhe-cart);
+  padding: 50px 50px 30px 50px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  & h3 {
+    font-size: 24px;
+    color: var(--cor-fonte-produto);
+  }
+  & img {
+    padding-right: 160px;
+  }
+}
+.cards_carrinho {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 0 0 45px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 9px 9px 6px rgba(0, 0, 0, 0.856);
+  visibility: visible;
+
+  & p {
+    border-bottom: 2px solid #000;
+    padding: 2px 46px 2px 46px;
+    font-weight: 600;
+    text-align: left;
+  }
+  & img {
+    cursor: pointer;
+  }
+}
+#btn_checkout {
+  background-color: var(--cor-botoes);
+  padding: 15px 25px 15px 25px;
+  color: #fff;
+  font-weight: 600;
+}
